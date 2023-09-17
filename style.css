@@ -1,0 +1,38 @@
+*{
+margin: 0;
+padding: 0;
+}
+body{
+    text-align: center;
+    margin-top: 50px;
+    background-color: bisque;
+}
+.btn{
+    height: 200px;
+    width: 200px;
+    border-radius: 15%;
+    border: 5px solid black;
+    margin: 1.5rem;
+}
+.btn-container{
+    display: flex;
+    justify-content: center;
+}
+.pink{
+    background-color: #ca3f75;
+}
+.green{
+    background-color: #5ea6b7;
+}
+.orange{
+    background-color: #f08b40;
+}
+.blue{
+    background-color: #7a90f4;
+}
+.flash{
+    background-color: white;
+}
+.user-flash{
+    background-color: yellowgreen;
+}
