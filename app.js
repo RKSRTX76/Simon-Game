@@ -64,7 +64,7 @@ function checkAns(lastIdx){
     }
     else{
         levelMax=Math.max(level,levelMax);
-        h2.innerHTML=`Game Over! <b><i>Your Score was ${level}</i></b>.<br>Highest Score was ${levelMax} <br> Press any key to start`;
+        h2.innerHTML=`Game Over! <b><i>Your Score was ${level}</i></b>.<br>Highest Score was ${levelMax}`;
         //once user choose wrong color change background color temporary
         document.querySelector("body").style.backgroundColor="#FF1800";
         setTimeout(function(){
