@@ -12,7 +12,7 @@ let startBtn=document.querySelector("#btn");
 startBtn.addEventListener("click",function(){
     if(started==false){
         started=true;
-        startBtn.style.visibility="invisible";
+        startBtn.style.visibility="hidden";
         console.log("game started");
         levelUp();
     }
@@ -98,6 +98,7 @@ function userFlash(btn){
 }
 
 function reset(){
+    startBtn.innerText="Restart Game";
     startBtn.style.visibility="visible";
     started=false;
     gameSeq=[];
