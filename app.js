@@ -8,9 +8,11 @@ let levelMax=-1;
 
 let h2=document.querySelector("h2");
 //track if any key pressed then game starts
-document.addEventListener("keypress",function(){
+let startBtn=document.querySelector("#btn");
+startBtn.addEventListener("click",function(){
     if(started==false){
         started=true;
+        startBtn.style.visibility="invisible";
         console.log("game started");
         levelUp();
     }
@@ -96,6 +98,7 @@ function userFlash(btn){
 }
 
 function reset(){
+    startBtn.style.visibility="visible";
     started=false;
     gameSeq=[];
     userSeq=[];
